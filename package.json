@@ -15,7 +15,7 @@
   "author": "Matias Berlinger <mberlin@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mberlin/n8n-nodes-cypher"
+    "url": "https://github.com/mberlin84/n8n_nodes_cypher"
   },
   "publishConfig": {
     "access": "public"
