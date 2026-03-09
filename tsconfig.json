@@ -13,5 +13,5 @@
     "allowJs": true
   },
   "include": ["credentials/**/*.ts", "nodes/**/*.ts", "nodes/**/*.js"],
-  "exclude": ["node_modules", "dist", "nodes/Cypher/neo4j-driver"]
+  "exclude": ["node_modules", "dist", "nodes/Cypher/neo4j-driver", "nodes/Cypher/neo4j-driver-core"]
 }

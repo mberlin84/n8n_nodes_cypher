@@ -9,4 +9,11 @@ function copyDriver() {
 	return src('nodes/Cypher/neo4j-driver/**').pipe(dest('dist/nodes/Cypher/neo4j-driver'));
 }
 
+function copyDriverCore() {
+	// also copy neo4j-driver-core package
+	return src('nodes/Cypher/neo4j-driver-core/**').pipe(dest('dist/nodes/Cypher/neo4j-driver-core'));
+}
+
+exports['build:icons'] = series(buildIcons, copyDriver, copyDriverCore);
+
 exports['build:icons'] = series(buildIcons, copyDriver);
