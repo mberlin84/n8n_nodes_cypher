@@ -1,6 +1,6 @@
 {
   "name": "@matterandes/n8n-nodes-cypher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "n8n community node to interact with graph databases via the Bolt protocol using Cypher queries",
   "keywords": [
     "n8n-community-node-package",
@@ -17,11 +17,15 @@
     "type": "git",
     "url": "https://github.com/mberlin/n8n-nodes-cypher"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "scripts": {
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
     "lint": "eslint nodes credentials --ext .ts",
+    "test": "echo \"No tests specified\" && exit 0",
     "prepublishOnly": "npm run build"
   },
   "n8n": {
