@@ -22,7 +22,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var rxjs_1 = require("rxjs");
 var result_rx_1 = __importDefault(require("./result-rx"));
 // eslint-disable-next-line no-unused-vars
-var neo4j_driver_core_1 = __importDefault(require("neo4j-driver-core"));
+var neo4j_driver_core_1 = __importDefault(require("./neo4j-driver-core"));
 /**
  * A reactive transaction, which provides the same functionality as {@link Transaction} but through a Reactive API.
  */

@@ -17,7 +17,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VERSION_IN_DEV = exports.VERSION_4_0_0 = exports.VERSION_3_5_0 = exports.VERSION_3_4_0 = exports.VERSION_3_2_0 = exports.ServerVersion = void 0;
-var neo4j_driver_core_1 = require("neo4j-driver-core");
+var neo4j_driver_core_1 = require("./neo4j-driver-core");
 var assertString = neo4j_driver_core_1.internal.util.assertString;
 var SERVER_VERSION_REGEX = /^(Neo4j\/)?(\d+)\.(\d+)(?:\.)?(\d*)(\.|-|\+)?([0-9A-Za-z-.]*)?$/;
 var NEO4J_IN_DEV_VERSION_STRING = 'Neo4j/dev';

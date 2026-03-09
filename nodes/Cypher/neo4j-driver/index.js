@@ -62,7 +62,7 @@ exports.hasReachableServer = hasReachableServer;
 var driver_1 = require("./driver");
 Object.defineProperty(exports, "Driver", { enumerable: true, get: function () { return driver_1.Driver; } });
 var version_1 = __importDefault(require("./version"));
-var neo4j_driver_core_1 = require("neo4j-driver-core");
+var neo4j_driver_core_1 = require("./neo4j-driver-core");
 Object.defineProperty(exports, "authTokenManagers", { enumerable: true, get: function () { return neo4j_driver_core_1.authTokenManagers; } });
 Object.defineProperty(exports, "Neo4jError", { enumerable: true, get: function () { return neo4j_driver_core_1.Neo4jError; } });
 Object.defineProperty(exports, "isRetriableError", { enumerable: true, get: function () { return neo4j_driver_core_1.isRetriableError; } });

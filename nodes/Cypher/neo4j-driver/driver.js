@@ -35,7 +35,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.WRITE = exports.READ = exports.Driver = void 0;
-var neo4j_driver_core_1 = require("neo4j-driver-core");
+var neo4j_driver_core_1 = require("./neo4j-driver-core");
 var session_rx_1 = __importDefault(require("./session-rx"));
 var FETCH_ALL = neo4j_driver_core_1.internal.constants.FETCH_ALL;
 var READ = neo4j_driver_core_1.driver.READ, WRITE = neo4j_driver_core_1.driver.WRITE;

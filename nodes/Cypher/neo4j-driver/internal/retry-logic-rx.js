@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-var neo4j_driver_core_1 = require("neo4j-driver-core");
+var neo4j_driver_core_1 = require("./neo4j-driver-core");
 // eslint-disable-next-line no-unused-vars
 var rxjs_1 = require("rxjs");
 var operators_1 = require("rxjs/operators");

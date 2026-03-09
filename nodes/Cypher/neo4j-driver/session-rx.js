@@ -23,7 +23,7 @@ var rxjs_1 = require("rxjs");
 var operators_1 = require("rxjs/operators");
 var result_rx_1 = __importDefault(require("./result-rx"));
 // eslint-disable-next-line no-unused-vars
-var neo4j_driver_core_1 = require("neo4j-driver-core");
+var neo4j_driver_core_1 = require("./neo4j-driver-core");
 var transaction_rx_1 = __importDefault(require("./transaction-rx"));
 var transaction_managed_rx_1 = __importDefault(require("./transaction-managed-rx"));
 var retry_logic_rx_1 = __importDefault(require("./internal/retry-logic-rx"));

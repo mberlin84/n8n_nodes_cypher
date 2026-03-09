@@ -53,7 +53,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * limitations under the License.
  */
 /* eslint-disable-next-line no-unused-vars */
-var neo4j_driver_core_1 = require("neo4j-driver-core");
+var neo4j_driver_core_1 = require("./neo4j-driver-core");
 var rxjs_1 = require("rxjs");
 var operators_1 = require("rxjs/operators");
 var States = {
