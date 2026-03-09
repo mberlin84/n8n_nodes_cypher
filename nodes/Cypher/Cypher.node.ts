@@ -1,5 +1,4 @@
-// vendor neo4j-driver to avoid external dependency
-const neo4j: any = require('./neo4j-driver');
+import neo4j, { Node, Relationship } from 'neo4j-driver';
 import {
 	IDataObject,
 	IExecuteFunctions,
@@ -11,14 +10,14 @@ import {
 
 function serializeValue(value: unknown): IDataObject | IDataObject[] | string | number | boolean | null {
 	// use runtime driver classes for instanceof checks
-	if (neo4j && neo4j.types && value instanceof neo4j.types.Node) {
+	if (value instanceof Node) {
 		return {
 			_id: (value as any).identity as unknown as number,
 			_labels: (value as any).labels as unknown as string,
 			...((value as any).properties as IDataObject),
 		} as IDataObject;
 	}
-	if (neo4j && neo4j.types && value instanceof neo4j.types.Relationship) {
+	if (value instanceof Relationship) {
 		return {
 			_id: (value as any).identity as unknown as number,
 			_type: (value as any).type,

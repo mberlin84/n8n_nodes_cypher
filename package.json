@@ -47,5 +47,6 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "neo4j-driver": "^6.0.1"
   }
 }
