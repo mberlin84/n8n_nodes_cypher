@@ -1,6 +1,6 @@
 {
   "name": "@matterandes/n8n-nodes-cypher",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "n8n community node to interact with graph databases via the Bolt protocol using Cypher queries",
   "keywords": [
     "n8n-community-node-package",
