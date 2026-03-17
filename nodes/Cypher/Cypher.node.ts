@@ -9,21 +9,20 @@ import {
 } from 'n8n-workflow';
 
 function serializeValue(value: unknown): IDataObject | IDataObject[] | string | number | boolean | null {
-	// use runtime driver classes for instanceof checks
 	if (value instanceof Node) {
 		return {
-			_id: (value as any).identity as unknown as number,
-			_labels: (value as any).labels as unknown as string,
-			...((value as any).properties as IDataObject),
+			_id: value.identity as unknown as number,
+			_labels: value.labels as unknown as string,
+			...(value.properties as IDataObject),
 		} as IDataObject;
 	}
 	if (value instanceof Relationship) {
 		return {
-			_id: (value as any).identity as unknown as number,
-			_type: (value as any).type,
-			_startNodeId: (value as any).start as unknown as number,
-			_endNodeId: (value as any).end as unknown as number,
-			...((value as any).properties as IDataObject),
+			_id: value.identity as unknown as number,
+			_type: value.type,
+			_startNodeId: value.start as unknown as number,
+			_endNodeId: value.end as unknown as number,
+			...(value.properties as IDataObject),
 		} as IDataObject;
 	}
 	if (Array.isArray(value)) {
